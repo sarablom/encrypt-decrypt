@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+      <label for="message">Meddelande</label>
+      <input type="text" id="message" name="message" /><br />
+
+      <label for="key">Nyckel</label>
+      <input type="text" id="key" name="key" /><br />
+
+      <button onclick="encryptWithKey();">Kryptera med bestämd nyckel</button>
+      <button onclick="decryptWithKey();">Avkryptera med bestämd nyckel</button><br />
+      <button onclick="encryptWithIndivdualKey();">Kryptera med egen nyckel</button><br />
+      <button onclick="decryptWithIndivdualKey();">Avkryptera med egen nyckel</button><br />
+
+      <label for="output">Output:</label>
+      <textarea name="output" id="output" cols="30" rows="10"></textarea>
+  </body>
+</html>
